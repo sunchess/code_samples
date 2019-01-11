@@ -1,8 +1,7 @@
 RSpec.describe Deribit::API do
-  let(:key){"BxxwbXRLmYid"}
-  let(:secret){"AAFKHJXE5GC6QI4IUI2AIOXQVH3YI3HO"}
+  let(:key){"YourKey"}
+  let(:secret){"YourSecret"}
   let!(:api){Deribit::API.new(key, secret)}
-
 
   it "#account" do
     VCR.use_cassette 'request/account' do

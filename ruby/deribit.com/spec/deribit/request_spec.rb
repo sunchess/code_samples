@@ -1,6 +1,6 @@
 RSpec.describe Deribit::Request do
-  let(:key){"BxxwbXRLmYid"}
-  let(:secret){"AAFKHJXE5GC6QI4IUI2AIOXQVH3YI3HO"}
+  let(:key){"YourKey"}
+  let(:secret){"YourSecret"}
   let(:credentials){Deribit::Credentials.new(key, secret)}
   let(:request){Deribit::Request.new(credentials)}
   let(:invalid_request){Deribit::Request.new(Deribit::Credentials.new("BxxwbXRLmYid","122"))}
